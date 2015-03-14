@@ -28,3 +28,25 @@ For first test case, The rotation will be like this:
 0 1 2 -> 2 1 0 -> 2 0 1 -> 2 0 1
 So, Index of 1 will be 2.
 */
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+	int T;cin>>T;
+	for(int i=0;i<T;i++)
+		{int N,K;cin>>N>>K;
+		 int odd=N/2;
+		 if(K<odd)//odd
+			{cout<<(2*K+1)<<endl;}
+		 else
+			{cout<<(N-K-1)*2<<endl;}
+		}
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
+
